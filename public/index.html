@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eventify | Discover Amazing Events</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#" class="logo">
+            <span class="logo-icon">E</span>
+            <span>Eventify</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#events">Explore Events</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="register.html" class="primary-btn nav-register">Get Started ↗</a>
+        </div>
+    </header>
+    <a href="dashboard.html" class="login-btn">My Dashboard</a>
+    <a href="admin.html" class="login-btn">Admin</a>
+
+
+    <!-- HERO SECTION -->
+    <main>
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <span class="eyebrow">
+                    ✦ YOUR NEXT EXPERIENCE STARTS HERE
+                </span>
+
+                <h1>
+                    Discover events.<br>
+                    <span>Make memories.</span>
+                </h1>
+
+                <p>
+                    Find exciting events, connect with amazing people,
+                    and create unforgettable experiences.
+                    Your next adventure is just one click away.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#events" class="primary-btn">
+                        Explore Events <span>→</span>
+                    </a>
+
+                    <a href="#about" class="secondary-btn">
+                        Learn More
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <h3>Easy</h3>
+                        <p>Event Discovery</p>
+                    </div>
+
+                    <div>
+                        <h3>Secure</h3>
+                        <p>Registration</p>
+                    </div>
+
+                    <div>
+                        <h3>Simple</h3>
+                        <p>Event Management</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-background"></div>
+
+                <div class="event-preview">
+                    <div class="preview-image">
+                        <span class="image-emoji">🚀</span>
+                        <span class="live-badge">● UPCOMING EVENT</span>
+                    </div>
+
+                    <div class="preview-content">
+                        <span class="category">TECHNOLOGY</span>
+
+                        <h3>Tech & Innovation Meetup</h3>
+
+                        <p>📅 January 15, 2027</p>
+                        <p>📍 Muzaffarpur, Bihar</p>
+
+                        <div class="preview-footer">
+                            <span>Discover something new</span>
+                            <span class="round-arrow">↗</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floating-card">
+                    <span class="floating-icon">🎟️</span>
+                    <div>
+                        <strong>Your next event</strong>
+                        <p>One click away!</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- EVENTS SECTION -->
+        <section class="events-section" id="events">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">FIND YOUR NEXT EXPERIENCE</span>
+                    <h2>Explore <span>Events</span></h2>
+                    <p>Discover events that inspire you to do more.</p>
+                </div>
+
+                <button class="outline-btn" id="refreshEvents">
+                    ↻ Refresh Events
+                </button>
+            </div>
+
+            <div class="event-grid" id="eventGrid">
+
+                <div class="loading-card">
+                    <div class="loader"></div>
+                    <p>Loading upcoming events...</p>
+                </div>
+
+            </div>
+
+            <p class="api-message" id="apiMessage"></p>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="about-section" id="about">
+            <span class="eyebrow">WHY EVENTIFY?</span>
+
+            <h2>Everything you need to<br>
+                <span>manage your events.</span>
+            </h2>
+
+            <div class="features-grid">
+
+                <article class="feature-card">
+                    <div class="feature-icon">🔎</div>
+                    <h3>Discover Events</h3>
+                    <p>Explore upcoming events and find experiences that interest you.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🎟️</div>
+                    <h3>Easy Registration</h3>
+                    <p>Register for your favourite events with a simple process.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">👤</div>
+                    <h3>Your Dashboard</h3>
+                    <p>View and manage your event registrations in one place.</p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="#home" class="logo">
+            <span class="logo-icon">E</span>
+            <span>Eventify</span>
+        </a>
+
+        <p>Discover experiences. Create memories.</p>
+
+        <span>© 2026 Eventify | CodeAlpha Project</span>
+    </footer>
+
+</body>
+</html>

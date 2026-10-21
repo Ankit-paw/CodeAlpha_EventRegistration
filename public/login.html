@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Eventify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+    <div class="auth-card">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">E</span>
+            <span>Eventify</span>
+        </a>
+
+        <h1>Welcome back!</h1>
+        <p class="auth-subtitle">Login to manage your event registrations.</p>
+
+        <form id="loginForm">
+            <label for="email">Email Address</label>
+            <input id="email" type="email" placeholder="you@example.com" required>
+
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter your password" required>
+
+            <button type="submit" class="primary-btn auth-submit">
+                Login →
+            </button>
+        </form>
+
+        <p id="loginMessage" class="form-message"></p>
+
+        <p class="auth-switch">
+            Don't have an account?
+            <a href="register.html">Create Account</a>
+        </p>
+
+        <a href="index.html" class="back-home">← Back to Home</a>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

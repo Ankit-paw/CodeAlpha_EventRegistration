@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Eventify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">E</span>
+            <span>Eventify Admin</span>
+        </a>
+
+        <div class="nav-actions">
+            <a href="index.html" class="secondary-btn">View Website</a>
+            <button id="adminLogout" class="primary-btn">Logout</button>
+        </div>
+    </header>
+
+    <main class="dashboard-main">
+
+        <section class="dashboard-welcome">
+            <span class="eyebrow">ADMINISTRATION</span>
+            <h1>Manage <span>Your Events</span> 🛠️</h1>
+            <p>Create new events for users to discover and register.</p>
+        </section>
+
+        <section class="admin-form-card">
+            <h2>Create a New Event</h2>
+            <p class="auth-subtitle">Enter the details below to publish an event.</p>
+
+            <form id="createEventForm">
+                <label for="eventTitle">Event Title</label>
+                <input id="eventTitle" type="text" required maxlength="120"
+                       placeholder="e.g. Technology Meetup">
+
+                <label for="eventDescription">Description</label>
+                <textarea id="eventDescription" required rows="4"
+                          placeholder="Describe your event..."></textarea>
+
+                <label for="eventDate">Event Date and Time</label>
+                <input id="eventDate" type="datetime-local" required>
+
+                <label for="eventLocation">Location</label>
+                <input id="eventLocation" type="text" required
+                       placeholder="City, State">
+
+                <label for="eventCapacity">Capacity</label>
+                <input id="eventCapacity" type="number" min="1" step="1"
+                       required placeholder="100">
+
+                <button type="submit" class="primary-btn auth-submit">
+                    Publish Event →
+                </button>
+            </form>
+
+            <p id="adminMessage" class="form-message"></p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">E</span>
+            <span>Eventify</span>
+        </a>
+        <p>Event management made simple.</p>
+        <span>© 2026 Eventify</span>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html>
